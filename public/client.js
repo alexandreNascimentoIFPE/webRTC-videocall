@@ -47,9 +47,9 @@ PART II VIDEO CHAT
 //mozilla.org
 function getLVideo(callbacks) {
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-    var constraints = {
-        audio: true,
-        video: true
+    var constraints = { 
+        audio: true, 
+        video: { facingMode: "user" } 
     }
     navigator.getUserMedia(constraints, callbacks.success, callbacks.error)
 
