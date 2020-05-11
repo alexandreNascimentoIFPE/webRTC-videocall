@@ -46,7 +46,7 @@ PART II VIDEO CHAT
 //   get the local video and display it with permission
 //mozilla.org
 function getLVideo(callbacks) {
-    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
     var constraints = {
         audio: true,
         video: true
