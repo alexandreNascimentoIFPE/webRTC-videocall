@@ -6,7 +6,7 @@
 // var serverIP = "http://localhost:2013";
 
 //my signalling server
-var serverIP = "http://45.55.61.164:2013/";
+var serverIP = "http://localhost:3000/";
 
 // RTCPeerConnection Options
 var server = {
